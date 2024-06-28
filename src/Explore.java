@@ -78,14 +78,14 @@ public class Explore extends JFrame implements ActionListener {
         subjects.setVisible(true);
         panel.add(subjects);
 
-        cs = createSubjectButton("Computer Science", 150, 150);
-        phy = createSubjectButton("Physics", 550, 150);
-        chem = createSubjectButton("Chemistry", 150, 250);
-        math = createSubjectButton("Math", 550, 250);
-        bio = createSubjectButton("Biology", 150, 350);
-        engg = createSubjectButton("Engineering", 550, 350);
-        art = createSubjectButton("Arts", 150, 450);
-        eco = createSubjectButton("Economics", 550, 450);
+        cs = createSubjectButton("Computer Science", 150, 150, "https://cs50.harvard.edu/college/2024/fall/");
+        phy = createSubjectButton("Engineering", 550, 150, "https://www.edx.org/learn/engineering");
+        chem = createSubjectButton("Physics", 150, 250, "https://youtu.be/wWnfJ0-xXRE?si=NWCce3a4RP4WKClx");
+        math = createSubjectButton("Math", 550, 250, "https://www.edx.org/learn/math");
+        bio = createSubjectButton("Biology", 150, 350, "https://www.bozemanscience.com/");
+        engg = createSubjectButton("Chemistry", 550, 350, "https://www.edx.org/learn/chemistry");
+        art = createSubjectButton("Arts", 150, 450, "https://www.edx.org/learn/arts");
+        eco = createSubjectButton("Economics", 550, 450, "https://www.youtube.com/@ehowfinance/playlists");
 
 
         video = new JPanel();
@@ -130,11 +130,18 @@ public class Explore extends JFrame implements ActionListener {
 
     }
 
-    private JButton createSubjectButton(String text, int x, int y) {
+    private JButton createSubjectButton(String text, int x, int y, String url) {
         JButton button = new JButton(text);
         button.setBounds(x, y, 300, 80);
         stylesubject(button);
         button.setVisible(false); // Initially hide subject buttons
+
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                openWebpage(url);
+            }
+        });
         this.add(button);
         return button;
     }
@@ -161,6 +168,18 @@ public class Explore extends JFrame implements ActionListener {
         this.add(button);
     }
 
+    public static void openWebpage(String urlString) {
+        try {
+            URI uri = new URI(urlString);
+            Desktop desktop = Desktop.getDesktop();
+            if (desktop.isSupported(Desktop.Action.BROWSE)) {
+                desktop.browse(uri);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -184,14 +203,11 @@ public class Explore extends JFrame implements ActionListener {
             chem.setVisible(areButtonsVisible);
             art.setVisible(areButtonsVisible);
             eco.setVisible(areButtonsVisible);
-
         }
 
         else if (e.getSource() == logout) {
-          label.setText("");
+          label.setText("?");
         }
-
-
 
 
     }
