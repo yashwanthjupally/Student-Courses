@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97248901-d160-470d-804b-0e98212e38cc" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jcalendar_1_4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Student Management System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Student Management System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Explore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Explore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/malan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/studyy.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,27 +40,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Explore.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Explores.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Register.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Student.executor&quot;: &quot;Run&quot;,
-    &quot;Application.clock.executor&quot;: &quot;Run&quot;,
-    &quot;Application.mm.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Downloads/mysql-connector-j-8.4.0/mysql-connector-j-8.4.0/mysql-connector-j-8.4.0.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.19310345&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Explore.executor": "Run",
+    "Application.Explores.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Register.executor": "Run",
+    "Application.Student.executor": "Run",
+    "Application.clock.executor": "Run",
+    "Application.mm.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/PC/Desktop/Spring Boot/Student Courses",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.19310345",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\Desktop\Spring Boot\Student Management System" />

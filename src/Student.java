@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class Student extends JFrame implements ActionListener {
 
-    JLabel label, student_email, student_password, label2;
+    JLabel label, student_email, student_password, label2, backgroundLabel;
     JTextField email;
     JPasswordField password;
     JButton login, newUser;
@@ -66,7 +66,6 @@ public class Student extends JFrame implements ActionListener {
         newUser.setForeground(Color.black);
         newUser.addActionListener(this);
         this.add(newUser);
-
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(600, 400);
