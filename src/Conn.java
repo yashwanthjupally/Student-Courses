@@ -1,11 +1,10 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+
+
 
 public class Conn {
 
-    String url = "jdbc:mysql://studentmanagement";
+    String url = "jdbc:mysql:///studentcourses";
     String username = "root";
     String password = "jupally123";
 
@@ -14,12 +13,13 @@ public class Conn {
 
     public Conn(){
         try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(url,username,password);
             statement = conn.createStatement();
 
         }
-        catch (SQLException e) {
-            System.out.println(e.getMessage());
+        catch (SQLException | ClassNotFoundException e) {
+            System.out.println(e);
         }
     }
 }
